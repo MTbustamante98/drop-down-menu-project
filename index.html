@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Intro section with dropdown navigation" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="./">
+          <img src="images/logo.svg" alt="Home" />
+        </a>
+      </div>
+      <nav class="nav" aria-label="Primary navegation">
+        <ul class="ul-list">
+          <li>
+            <a data-lista class="link-ul-list" aria-expanded="false" aria-controls="features-dropdown" href="#">Features</a>
+          </li>
+          <ul data-menu="dropdown">
+            <li><a role="menuitem" href="#">Todo List</a></li>
+            <li><a role="menuitem" href="#">Calendar</a></li>
+            <li><a role="menuitem" href="#">Reminders</a></li>
+            <li><a role="menuitem" href="#">Planning</a></li>
+          </ul>
+          <li>
+            <a data-lista2 class="link-ul-list" aria-expanded="false" aria-controls="company-dropdown" href="#">Company</a>
+          </li>
+          <ul data-menu="dropdown-2">
+            <li><a role="menuitem" href="#">History</a></li>
+            <li><a role="menuitem" href="#">Our Team</a></li>
+            <li><a role="menuitem" href="#">Blog</a></li>
+          </ul>
+          <li>
+            <a class="link-ul-list" href="#">Careers</a>
+          </li>
+          <li>
+            <a class="link-ul-list" href="#">About</a>
+          </li>
+        </ul>
+        <div class="log">
+          <ul>
+            <li><a href="#" aria-label="Login to your account">Login</a></li>
+            <li><a href="#" aria-label="Register for a new account">Register</a></li>
+          </ul>
+        </div>
+      </nav>
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">
+        <img id="burguerImg" src="images/icon-menu.svg" alt="Representation icon menu burger" />
+      </button>
+    </header>
+    <main class="container">
+      <section class="learn-more" role="region" aria-labelledby="learn-more-title">
+        <div>
+          <h1 id="learn-more-title">Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <div class="link">
+            <a href="">Learn more</a>
+          </div>
+        </div>
+        <div class="sponsorship">
+          <img src="images/client-databiz.svg" alt="Databiz logo" />
+          <img src="images/client-audiophile.svg" alt="audiophile logo" />
+          <img src="images/client-meet.svg" alt="Meet logo" />
+          <img src="images/client-maker.svg" alt="Maker logo" />
+        </div>
+      </section>
+      <section class="background">
+        <picture>
+          <source
+            media="(max-width: 700px)"
+            srcset="images/image-hero-mobile.png"
+          />
+          <img src="images/image-hero-desktop.png" alt="Team working remotely" />
+        </picture>
+      </section>
+    </main>
+
+    <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+    </footer>
+   <script src="script.js"></script>
+  </body>
+</html>

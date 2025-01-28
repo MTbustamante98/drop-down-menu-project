@@ -1,0 +1,140 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 85vh;
+  width: auto;
+  box-sizing: border-box;
+}
+
+.learn-more {
+  padding-left: 4rem;
+}
+
+.learn-more h1 {
+  max-width: 11ch;
+  padding-top: 10rem;
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--almost-black);
+}
+
+.learn-more p {
+  max-width: 45ch;
+  padding-top: 3.75rem;
+  line-height: 1.7rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--medium-gray);
+}
+
+.learn-more a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 3.75rem;
+  font-weight: 500;
+  border-radius: 10px;
+  background: var(--almost-black);
+  color: var(--almost-White);
+}
+
+.learn-more a:hover {
+  border: 1px solid var(--almost-black);
+  background: transparent;
+  color: var(--almost-black);
+}
+
+.sponsorship {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  padding-top: 8rem;
+}
+
+.background img {
+  height: 75%;
+  box-sizing: border-box;
+  padding-left: 7.5rem;
+  padding-top: 3.75rem;
+}
+
+@media (max-width: 1440px) {
+  .learn-more h1 {
+    font-size: 5rem;
+  }
+
+  .sponsorship {
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+    padding-top: 5rem;
+  }
+
+  .background img {
+    height: auto;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 1212px) {
+  .background img {
+    height: 100%;
+  }
+
+  .learn-more h1 {
+    font-size: 4rem;
+  }
+} 
+
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+  }
+
+  .learn-more {
+    order: 1;
+    padding: 0;
+  }
+
+  .learn-more h1 {
+    max-width: 60ch;
+    padding-top: 0;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .learn-more p {
+    max-width: 36ch;
+    text-align: center;
+    line-height: 1.7rem;
+    padding-left: 1.875rem;
+    padding-top: 1.5rem;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .background {
+    order: 0;
+  }
+
+  .background img {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+
+  .sponsorship {
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+  }
+}

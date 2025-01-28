@@ -1,0 +1,89 @@
+@media (min-width: 1024px) {
+  [data-menu="dropdown"].ativo {
+    display: block;
+    animation: showDown ease .4s forwards;
+  }
+  
+  [data-lista].ativo::after {
+    background: url("/images/icon-arrow-up.svg") no-repeat center center;
+  }
+  
+  [data-menu="dropdown-2"].ativo {
+    display: block;
+    animation: showDown ease .4s forwards;
+  }
+  
+  [data-lista2].ativo::after {
+    background: url("/images/icon-arrow-up.svg") no-repeat center center;
+  }
+  
+  @keyframes showDown {
+    from {
+      transform: translate(10px, 0);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+} 
+
+@media (max-width: 800px) {
+  .header .nav.ativo {
+    display: block;
+    animation: showUlList ease .5s forwards;
+  }
+  
+  .header .nav [data-menu="dropdown"].ativo {
+    display: block;
+    position: static;
+    transform: translate(0, 0);
+  }
+
+  [data-lista].ativo::after {
+    background: url("/images/icon-arrow-up.svg") no-repeat center center;
+  }
+
+  .header .nav [data-menu="dropdown-2"].ativo {
+    display: block;
+    position: static;
+    margin-top: 0;
+  }
+
+  [data-lista2].ativo::after {
+    background: url("/images/icon-arrow-up.svg") no-repeat center center;
+    position: static;
+  }
+
+  .nav .ul-list > li:nth-of-type(2).ativo {
+    padding: 60px;
+  }
+
+  #burguerImg.ativo {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+  }
+
+  @keyframes showUlList {
+    from {
+      transform: translate(200px, 0);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes icon-close-menu {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
