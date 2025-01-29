@@ -29,11 +29,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     targetMenuArray.forEach((menu) => menu.classList.toggle(activeClass));
     targetLink.classList.toggle(activeClass);
 
-    outsideClick(targetLink, targetMenuArray, () => {
-      targetMenuArray.forEach((menu) => menu.classList.remove(activeClass));
-      targetLink.classList.remove(activeClass);
-    });
-
     return;
   }
 
