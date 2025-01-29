@@ -46,16 +46,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         willActivate ? "/images/icon-menu.svg" : "/images/icon-close-menu.svg"
       );
     }
-
-    if (!willActivate) {
-      outsideClickForMenuMobile(nav, () => {
-        nav.classList.remove(activeClass);
-        burguerImg.setAttribute(
-          "src", "/images/icon-menu.svg"
-        );
-      });
-    }
-
     return;
   }
 
